@@ -16,6 +16,7 @@ A browser-based password generator that follows common security practices. Nothi
 
 - `client.js`: the generator and UI, runs in the browser.
 - `server.js`: a placeholder for the Gadget platform. It doesn't handle passwords.
+- `LEARNING.md`: a walkthrough of how the code works.
 
 ## Limitations
 
