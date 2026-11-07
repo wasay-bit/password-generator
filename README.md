@@ -1,6 +1,5 @@
 # Password Generator
 
-> **Practice project.** This code was written by AI (Claude) to test Cloudflare OS. It was not written by the repo owner.
 
 A browser-based password generator that follows common security practices. Nothing is stored or sent over the network.
 
