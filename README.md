@@ -44,7 +44,7 @@ npm test
 
 ## Tests and CI
 
-Tests run with `npm test`. Automatic runs on every push through GitHub Actions are planned but not yet active.
+Tests run with `npm test`. They also run automatically on every push and pull request through GitHub Actions (`.github/workflows/tests.yml`).
 
 ## Limitations
 
