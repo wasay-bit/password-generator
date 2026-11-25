@@ -89,10 +89,12 @@ test("passwords use the platform's cryptographic random source, not Math.random"
 });
 
 test("pool leaves out look-alike characters by default and keeps them when asked", () => {
+  // "|" is not in any character set, so only the characters that can appear are checked.
+  const lookAlikes = "O0oIl1";
   const without = pool({}).chars;
-  for (const ch of "O0oIl1|") assert.ok(!without.includes(ch), `${ch} should be removed`);
+  for (const ch of lookAlikes) assert.ok(!without.includes(ch), `${ch} should be removed`);
   const withAll = pool({ avoidAmbiguous: false }).chars;
-  for (const ch of "O0oIl1|") assert.ok(withAll.includes(ch), `${ch} should be kept`);
+  for (const ch of lookAlikes) assert.ok(withAll.includes(ch), `${ch} should be kept`);
 });
 
 test("pool only includes the sets that are turned on", () => {
