@@ -1,0 +1,14 @@
+{
+  "name": "password-generator",
+  "version": "1.1.0",
+  "description": "Practice project: a browser password generator, with a tested core and a command-line version.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "generate": "node cli.js"
+  }
+}
