@@ -2,7 +2,7 @@
 
 A password generator that follows common security practices. Nothing is stored or sent over the network. It comes in two forms: a browser page, and a command-line tool.
 
-> **Authorship:** Written by AI (Claude) as a practice project. The password rules are simple examples, and the project has not been audited.
+
 
 ## Quick start
 
